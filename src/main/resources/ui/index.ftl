@@ -13,8 +13,9 @@
 </head>
 <body>
 <div class="easyui-tabs";">
-    <div title="First Tab" style="padding:10px;">
-        First Tab
+    <div title="Пример CRUD" style="padding:10px;">
+        <a href="/crud" class="easyui-linkbutton">Переход на CRUD</a>
+
     </div>
     <div title="Пример REST" closable="false" style="padding:10px;">
 
@@ -22,16 +23,24 @@
 
         <h3>Это простой пример использования REST c помощью Ajax</h3>
 
-        <button type="button" onclick="RestGet()">Метод GET</button>
-        <button type="button" onclick="RestPost()">Метод POST</button>
-        <button type="button" onclick="RestDelete()">Метод DELETE</button>
-        <button type="button" onclick="RestPut()">Метод PUT</button>
+        <div style="padding:5px;background:#fafafa;width:500px;border:1px solid #ccc">
+            <a href="#" onclick=RestGet() class="easyui-linkbutton">Метод GET</a>
+            <a href="#" onclick=RestPost() class="easyui-linkbutton">Метод POST</a>
+            <a href="#" onclick=RestDelete() class="easyui-linkbutton">Метод DELETE</a>
+            <a href="#" onclick=RestPut() class="easyui-linkbutton">Метод PUT</a>
+        </div>
 
-        <h2> <a href="rest.ftl">Переход на страницу rest</a></h2>
+        <br/>
+        <br/>
+        <br/>
+        <a href="/rest" class="easyui-linkbutton">Переход на REST</a>
     </div>
-    <div title="Third Tab" iconCls="icon-reload" closable="false" style="padding:10px;">
-        Third Tab
+    <div title="Пример JSON" iconCls="icon-reload" closable="false" style="padding:10px;">
+    `
+        <a href="/json" class="easyui-linkbutton">Переход на JSON</a>
     </div>
 </div>
+
+
 </body>
 </html>

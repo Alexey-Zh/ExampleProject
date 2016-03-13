@@ -1,9 +1,17 @@
 <html>
 <head>
-    <title>Пример использования REST</title>
+    <meta charset="UTF-8">
+    <title>Пример REST</title>
+    <link rel="stylesheet" type="text/css" href="/resources/easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="/resources/easyui/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="/resources/easyui/themes/color.css">
+    <link rel="stylesheet" type="text/css" href="/resources/easyui/demo/demo.css">
+    <script type="text/javascript" src="/resources/easyui/jquery.min.js"></script>
+    <script type="text/javascript" src="/resources/easyui/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="resources/js/mapping.js"></script>
 </head>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="/resources/easyui/jquery.min.js"></script>
 <script type="text/javascript">
     var prefix = '/restservice';
 
@@ -79,14 +87,23 @@
     }
 </script>
 
+<script type="text/javascript" src="resources/js/mapping.js"></script>
+
+
 <body>
 
 <h3>Это простой пример использования REST c помощью Ajax</h3>
 
-<button type="button" onclick="RestGet()">Метод GET</button>
-<button type="button" onclick="RestPost()">Метод POST</button>
-<button type="button" onclick="RestDelete()">Метод DELETE</button>
-<button type="button" onclick="RestPut()">Метод PUT</button>
+<p>
+<div style="padding:5px;background:#fafafa;width:500px;border:1px solid #ccc">
+    <a href="#" onclick=RestGet() class="easyui-linkbutton">Метод GET</a>
+    <a href="#" onclick=RestPost() class="easyui-linkbutton">Метод POST</a>
+    <a href="#" onclick=RestDelete() class="easyui-linkbutton">Метод DELETE</a>
+    <a href="#" onclick=RestPut() class="easyui-linkbutton">Метод PUT</a>
+</div>
+</p>
+<br>
+<a href="/" class="easyui-linkbutton" iconCls="icon-cancel">Назад</a>
 
 </body>
 </html>
